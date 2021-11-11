@@ -1,0 +1,135 @@
+/* prototype only styles */
+/*
+* This file contains all default application-wide Sass and CSS3 variables.
+*/
+/* used to determine when to trigger an external icon */
+/* Type Variables */
+/* Type Sizes */
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 28px */
+/* 32px */
+/* 36px */
+/* 44px */
+/* 54px */
+/* 64px */
+/* 80px */
+/* 122px */
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 28px */
+/* 32px */
+/* 36px */
+/* 44px */
+/* 54px */
+/* 64px */
+/* 80px */
+/* 122px */
+/* Colors */
+/* rgb - (0,33,69) */
+/* rgb - (0,58,121) */
+/* rgb - (0,85,183) */
+/* rgb - (64,180,229) */
+/* rgb - (110,196,232) */
+/* rgb - (151,212,233) */
+/* rgb - (255,243,249)  (was #e1f3f9) */
+/* Default colors */
+/* Title weights */
+/* Forms */
+/* Buttons */
+/* Tables */
+/* Carousel */
+/* Throbber / ajax loading animation */
+/* CLF 8 Breakpoints map */
+/* CLF 7 Breakpoints map to control version 7 of the CLF separately */
+/* Cards */
+.flex-item .card {
+	height: 100%;
+	position: relative;
+}
+.widget-card {
+	margin-top: 2rem;
+}
+.unit-icon {
+	display: inline;
+}
+.widget-svgicon {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+	align-self: center;
+}
+/* reset tag class for prism code highlighting */
+.token.tag {
+	display: initial;
+	margin-right: initial;
+	padding: initial;
+	color: #e2777a;
+	font-size: initial;
+	line-height: initial;
+	background-color: initial;
+}
+/* TEMP */
+figure.align-center,
+figure.align-left,
+figure.align-right,
+figure.img-and-caption {
+	display: table;
+}
+figure.align-center figcaption,
+figure.align-left figcaption,
+figure.align-right figcaption,
+figure.img-and-caption figcaption {
+	display: table-caption;
+	caption-side: bottom;
+}
+.media--type-image {
+	margin-top: calc(var(--leading) * var(--base-font-size));
+}
+figure .media--type-image img {
+	width: 100%;
+}
+.align-left.media--type-image,
+figure.align-left {
+	float: left;
+	margin-right: calc(var(--leading) * var(--base-font-size));
+	margin-bottom: calc(var(--leading) * var(--base-font-size));
+}
+.align-right.media--type-image,
+figure.align-right {
+	float: right;
+	margin-bottom: calc(var(--leading) * var(--base-font-size));
+	margin-left: calc(var(--leading) * var(--base-font-size));
+}
+.align-left.media--type-image,
+.align-right.media--type-image {
+	display: inline-block;
+}
+.align-center.media--type-image img,
+figure.align-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+figure.align-center > article,
+figure.align-center > div {
+	display: block;
+	max-width: 100%;
+}
+@media (max-width: 767px) {
+	.align-right.media--type-image,
+	figure.align-right,
+	.align-left.media--type-image,
+	figure.align-left {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

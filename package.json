@@ -1,0 +1,81 @@
+{
+	"name": "ubc-prototypng",
+	"version": "2.0.0-beta3",
+	"description": "UBC Prototyping scaffolding",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ubc-web-services/ubcit-prototyping.git"
+	},
+	"keywords": [
+		"clf",
+		"ubc"
+	],
+	"author": "James O'Toole, UBC IT, Web Services",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ubc-web-services/ubcit-prototyping/issues"
+	},
+	"homepage": "https://github.com/ubc-web-services/ubcit-prototyping#readme",
+	"engines": {
+		"node": ">= 8.11"
+	},
+	"scripts": {
+		"cypress": "cypress open",
+		"serve": "NODE_ENV=development live-server --host=127.0.0.1 --port=64895 ./build --watch",
+		"lint:css": "stylelint \"src/**/*.css\" || exit 0",
+		"lint:fix-css": "stylelint \"src/**/*.css\" --fix || exit 0",
+		"watch": "NODE_ENV=development postcss ./src/css/*.css -d ./build/css -w",
+		"css": "TAILWIND_MODE=build NODE_ENV=development postcss ./src/css/*.css -d ./build/css",
+		"dev": "TAILWIND_MODE=build NODE_ENV=development postcss ./src/css/*.css -d ./build/css && webpack --config webpack.dev.js -p",
+		"html": "NODE_ENV=production twig-cli \"src/html/**/*.html.twig\" --base src/html/ --output build/ && ncp src/html/img build/img",
+		"prod": "NODE_ENV=production postcss ./src/css/*.css -d ./build/css --ext min.css && webpack --config webpack.prod.js -p"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.11.5",
+		"@tailwindcss/forms": "^0.2.1",
+		"clickout-event": "^1.0.2",
+		"tiny-slider": "^2.9.3",
+		"v-calendar": "^2.3.0",
+		"vue": "^2.6.12",
+		"vue-headroom": "^0.10.1",
+		"vue-scrollto": "^2.19.1",
+		"vue-slide-up-down": "^2.0.1",
+		"vue-tiny-slider": "^0.1.39"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.13.16",
+		"@babel/core": "^7.14.2",
+		"@babel/plugin-transform-runtime": "^7.14.2",
+		"@babel/preset-env": "^7.14.2",
+		"autoprefixer": "^10.2.5",
+		"babel-loader": "^8.1.0",
+		"babel-preset-minify": "^0.5.1",
+		"css-loader": "^5.2.4",
+		"cssnano": "^4.1.11",
+		"cypress": "^6.9.1",
+		"live-server": "^1.2.1",
+		"ncp": "^2.0.0",
+		"postcss": "^8.2.15",
+		"postcss-cli": "^8.3.1",
+		"postcss-import": "^12.0.1",
+		"postcss-loader": "^4.0.4",
+		"postcss-simple-vars": "^5.0.2",
+		"stylelint": "^13.13.1",
+		"stylelint-config-standard": "^18.3.0",
+		"stylelint-order": "^3.1.1",
+		"tailwindcss": "^2.1.2",
+		"twig-cli-tmpl": "^1.0.1",
+		"vue-loader": "^15.9.7",
+		"vue-template-compiler": "^2.6.12",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-merge": "^5.3.0"
+	},
+	"browserslist": [
+		"> 1%",
+		"not edge <= 18",
+		"not ie 11",
+		"not op_mini all"
+	]
+}

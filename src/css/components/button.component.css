@@ -1,0 +1,147 @@
+/** @define button */
+
+/*
+* This file contains all styles related to the button component.
+*/
+
+/* flex button */
+.unit-button {
+	@apply inline-flex text-center no-underline uppercase border;
+	padding: .65em 2em .42em;
+	color: $button-text;
+	background-color: $button-bg;
+	border-color: $button-border;
+	cursor: pointer;
+	transition: all .125s ease-out;
+	clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 0 16%);
+
+	/* clip-path: polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 15px); */
+}
+
+.unit-button:hover {
+	@apply no-underline shadow-md;
+	color: $button-text--hover;
+	background-color: $button-bg--hover;
+	border-color: $button-border--hover;
+}
+
+.unit-button:active {
+	@apply no-underline shadow-md;
+	color: $button-text--active;
+	background-color: $button-bg--active;
+	border-color: $button-border--active;
+}
+
+.unit-button--block {
+	display: block;
+	width: 100%;
+	text-align: center;
+	clip-path: polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 15px);
+}
+
+/* button colour variations */
+.unit-button--light {
+	color: $button-light-text;
+	background-color: $button-light-bg;
+	border-color: $button-light-border;
+}
+
+.unit-button--light:hover {
+	color: $button-light-text--hover;
+	background-color: $button-light-bg--hover;
+	border-color: $button-light-border--hover;
+}
+
+.unit-button--light:active {
+	color: $button-light-text--active;
+	background-color: $button-light-bg--active;
+	border-color: $button-light-border--active;
+}
+
+.unit-button--dark {
+	color: $button-dark-text;
+	background-color: $button-dark-bg;
+	border-color: $button-dark-border;
+}
+
+.unit-button--dark:hover {
+	color: $button-dark-text--hover;
+	background-color: $button-dark-bg--hover;
+	border-color: $button-dark-border--hover;
+}
+
+.unit-button--dark:active {
+	color: $button-dark-text--active;
+	background-color: $button-dark-bg--active;
+	border-color: $button-dark-border--active;
+}
+
+.unit-button--transparent {
+	color: $button-transparent-text;
+	background-color: $button-transparent-bg;
+	border-color: $button-transparent-border;
+}
+
+.unit-button--transparent:hover {
+	color: $button-transparent-text--hover;
+	background-color: $button-transparent-bg--hover;
+	border-color: $button-transparent-border--hover;
+}
+
+.unit-button--transparent:active {
+	color: $button-transparent-text--active;
+	background-color: $button-transparent-bg--active;
+	border-color: $button-transparent-border--active;
+}
+
+.unit-button--simple {
+	@apply relative py-0 pl-0 overflow-hidden tracking-wider border-0;
+	color: $default-link-color;
+	padding-right: 1.5em;
+	background: transparent;
+}
+
+.unit-button--simple::before {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	transform: translate3d(0, 0, 0);
+	transition-timing-function: ease-out;
+	transition-duration: .2s;
+	transition-property: transform;
+	content: "";
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1792 1792'%3E%3Cpath fill='%230055b7' d='M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z'%3E%3C/path%3E%3C/svg%3E");
+	background-position: top .3em center;
+	background-size: .85em .85em;
+	background-repeat: no-repeat;
+	width: 1.5em;
+}
+
+.unit-button--simple:hover {
+	color: $default-link-color-hover;
+	text-decoration: none;
+	background: transparent;
+	box-shadow: none;
+}
+
+.unit-button--simple:hover::after,
+.unit-button--simple:focus::after,
+.unit-button--simple:active::after {
+	transform: translate3d(0, 0, 0);
+}
+
+.unit-button--simple:hover::before,
+.unit-button--simple:focus::before,
+.unit-button--simple:active::before {
+	transform: translate3d(4px, 0, 0);
+}
+
+
+.unit-button-icon {
+	height: 1em;
+	width: 1em;
+	top: .5em;
+	margin-left: .5em;
+	transform: translateY(.2em);
+}

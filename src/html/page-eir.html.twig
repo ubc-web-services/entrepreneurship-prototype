@@ -1,0 +1,73 @@
+{% extends "layouts/side-l.twig" %}
+{% set title = "Michelle Sklar" %}
+{% set pageTitle = "Michelle Sklar" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+<div class="relative bg-ubc-blue-polar">
+  <div class="container px-5 py-12 mx-auto text-black sm--flex md--px-4">
+    <div class="sm--w-1/3 clip-polygon-3">
+      <img alt="the homepage alternate text" src="img/demo/19936844258_3801dc17a2_k.jpg" loading="lazy" height="1363" width="2048">
+    </div>
+    <div class="pt-12 sm--pl-12 sm--self-end sm--w-2/3">
+      <h1 class="mt-0 text-ubc-blue heading-display">{{ title }}</h1>
+      <h2 class="mt-0 font-sans font-normal h4 text-ubc-blue">EIR, Head of Marketing</h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+<section class="first-child--mt-0">
+  <p class="text-lead">The world has changed dramatically ove the past few months, and so has lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  <tabs tabsonly>
+    <tab name="Bio" :selected="true">
+      <p></p>
+      <p>Michelle Sklar inherited property to the amount of nearly a hundred thousand pounds from her father, who had intended to purchase an estate, but did not live to do it. Mr. Bingley intended it likewise, and sometimes made choice of his county; but as he was now provided with a good house and the liberty of a manor, it was doubtful to many of those who best knew the easiness of his temper, whether he might not spend the remainder of his days at Netherfield, and leave the next generation to purchase.</p>
+      <p>His sisters were anxious for his having an estate of his own; but, though he was now only established as a tenant, Miss Bingley was by no means unwilling to preside at his table--nor was Mrs. Hurst, who had married a man of more fashion than fortune, less disposed to consider his house as her home when it suited her. Mr. Bingley had not been of age two years, when he was tempted by an accidental recommendation to look at Netherfield House. He did look at it, and into it for half-an-hour--was pleased with the situation and the principal rooms, satisfied with what the owner said in its praise, and took it immediately.</p>
+    </tab>
+    <tab name="Ventures worked with">
+      <p>Between him and Darcy there was a very steady friendship, in spite of great opposition of character. Bingley was endeared to Darcy by the easiness, openness, and ductility of his temper, though no disposition could offer a greater contrast to his own, and though with his own he never appeared dissatisfied. On the strength of Darcy’s regard, Bingley had the firmest reliance, and of his judgement the highest opinion. In understanding, Darcy was the superior. Bingley was by no means deficient, but Darcy was clever. He was at the same time haughty, reserved, and fastidious, and his manners, though well-bred, were not inviting. In that respect his friend had greatly the advantage. Bingley was sure of being liked wherever he appeared, Darcy was continually giving offense.</p>
+    </tab>
+  </tabs>
+</section>
+
+
+{% endblock %}
+
+{% block areab %}
+<section class="pb-12 first-child--mt-0">
+  <h3 class="h5">Specialization</h3>
+  <p class="mt-0">Marketing &amp; Communication Strategy</p>
+  <h3 class="h5">Streams</h3>
+  <p class="mt-0">Core<svg class="inline-block w-4 h-4 ml-3 xl--h-6 xl--w-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 407.023 393.59"><path fill="#0b2039" d="M169.13,342.74c37.87,44.35,114.38,16.47,188-46.37S490.7,140,452.82,95.65s-135.46-.1-209,62.74-112.53,140-74.65,184.35M101.7,228.13,57.5,331.06l120.81-25.84,19.96-93.9ZM212.25,347.34,194.26,457.92l110.98-54.31-3.35-95.94-89.64,39.67Zm-61.26-50.97-16.56,53.02,49.23-4.93-19.42-29.29Zm18.96,31.75-3.46,54.67,46.59-16.64-25.81-23.28-17.32-14.75Z" transform="translate(-57.5 -64.33)"></path><path fill="#fff" d="M396.08,173.09c16.57,0,30-14,30-31.2s-13.43-31.2-30-31.2-30,14-30,31.2,13.43,31.2,30,31.2" transform="translate(-57.5 -64.33)"></path></svg></p>
+  <h3 class="h5">Contact</h3>
+  <p class="mt-0"><a href="mailto:michelle.sklar@ubc.ca"><svg role="presentation" class="inline-block w-4 h-4 mr-3 xl--h-6 xl--w-6 text-ubc-blue">
+		<use xlink:href="#icon-mail"></use>
+	</svg>Michelle Sklar</a></p>
+  <p class="mt-0"><a href="mailto:michelle.sklar@ubc.ca"><svg role="presentation" class="inline-block w-4 h-4 mr-3 xl--h-6 xl--w-6 text-ubc-blue">
+		<use xlink:href="#icon-linkedin"></use>
+	</svg>michellesklar</a></p>
+</section>
+
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% include "components/region--newsletter--1.twig" %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

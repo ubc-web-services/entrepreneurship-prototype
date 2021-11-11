@@ -1,0 +1,28 @@
+/** @define tag */
+
+/*
+* This file contains all styles related to the tag component.
+*/
+.tags a,
+.tag {
+	@apply mr-4 text-xs text-white no-underline rounded;
+	padding: .35em .75em .25em;
+	background-color: rgba(0, 33, 69, 1);
+}
+
+.tags a::before,
+.tag::before {
+	content: '# ';
+	font-size: 1.25em;
+	line-height: 0;
+}
+
+.tags a:hover,
+a.tag:hover {
+	@apply text-white bg-ubc-blue-cobalt;
+}
+
+.tags a:active,
+a.tag:active {
+	background-color: rgba(0, 33, 69, .8);
+}

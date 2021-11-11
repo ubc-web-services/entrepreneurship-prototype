@@ -1,0 +1,78 @@
+{# CONFIG #}
+{% block config %}
+	{% set unitName = "e@ubc" %}
+	{% set siteURL = "e.ubc.ca" %}
+	{% set facultyName = "" %}
+	{% set campus = 'vancouver' %}
+	{% set clfversion = 7 %}
+	{% set clf_sticky = TRUE %}
+	{% set show_nav_secondary = FALSE %}
+	{%
+		set bodyClasses = 'legacy--bw overflow-x-hidden layout--full-width'
+	%}
+{% endblock %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }} | {{ unitName }}</title>
+	{% include "../includes/head.twig" %}
+	{% block custom_css %}{% endblock %}
+	<style>
+		#ubc7-unit { background-color: var(--color-primary); }
+	</style>
+</head>
+
+<body class="{{ bodyClasses }}">
+	<div id="main-content">
+		{% if clfversion == 7 %}
+			{% include "../includes/header--clf7.twig" %}
+		{% else %}
+			{% include "../includes/header.twig" %}
+		{% endif %}
+		{% block masthead %}{% endblock %}
+		<div id="unit-content">
+			<main>
+				<div class="container grid grid-cols-12 gap-8 px-5 mx-auto md--px-4">
+					<div class="col-span-full md--col-span-8 lg--col-span-7">
+						{% include "components/navigation--breadcrumb.twig" %}
+					</div>
+					<div class="col-span-full md--col-span-8 lg--col-span-7 md--row-span-2 md--row-start-2">
+						{% if showTitle %}
+							<h1 class="mt-0">{{ pageTitle }}</h1>
+						{% endif %}
+						{% block content %}{% endblock %}
+					</div>
+					<div class="col-span-full md--col-span-4 md--col-start-9 md--row-start-1 md--row-span-2">
+						{% block areab %}{% endblock %}
+					</div>
+					<div class="col-span-full md--col-span-4 md--col-start-9 md--row-start-3">
+						{% block subnav %}{% endblock %}
+					</div>
+					<div class="col-span-full">
+						{% block areac %}{% endblock %}
+					</div>
+				</div>
+			</main>
+			{% block prefooter %}{% endblock %}
+		</div>
+		<footer id="unit-footer">
+			{% if clfversion == 7 %}
+				{% include "../includes/footer--unit.twig" %}
+				{% include "../includes/footer--clf7.twig" %}
+			{% else %}
+				{% include "../includes/footer--unit.twig" %}
+				{% include "../includes/footer.twig" %}
+			{% endif %}
+		</footer>
+		<div id="totop-mask"></div>
+		<button id="totop" v-scroll-to="{ el: 'body'}">to top</button>
+	</div>
+	{% include "../includes/svg.twig" %}
+	{% include "../includes/scripts.twig" %}
+	{% block custom_javascript %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+{% extends "layouts/narrow.twig" %}
+{% set title = "Spotlight" %}
+{% set pageTitle = "From sci-fi to computer engineering" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+<div class="relative img-cover clip-feature">
+  <img alt="the alternate text" src="img/demo/blog-feature.jpg" loading="lazy" height="583" width="2048" class="min-h-[500px]" />
+</div>
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+<section>
+  <p class="text-sm text-grey-700">Event Category</p>
+  <h1 class="mt-6">Event name and more words</h1>
+  <h2 class="mt-0 font-sans font-normal h3">Martober 32, 2021</h2>
+  {% include "components/component--social--share.twig" %}
+  <p>The world has changed dramatically ove the past few months, and so has lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p>Elizabeth listened in silence, but was not convinced; their behaviour at the assembly had not been calculated to please in general; and with more quickness of observation and less pliancy of temper than her sister, and with a judgement too unassailed by any attention to herself, she was very little disposed to approve them.</p>
+  <div class="sm--flex sm---mx-4">
+    <div class="sm--px-4 sm--flex-1">
+      <h3 class="h4">Location</h3>
+      <p>123 Main Mall<br />Vancouver, BC<br />V3W 8W8</p>
+    </div>
+    <div class="sm--px-4 sm--flex-1">
+      <h3 class="h4">Time</h3>
+      <p>Doors open 7pm<br />Presentation begins 8pm</p>
+    </div>
+  </div>
+
+  <p class="p-12 my-12 bg-grey-100"><code>[EVENTBRITE EVENT WIDGET PLACEHOLDER]</code></p>
+
+  {% include "components/media--image-w-caption.twig" %}
+
+</section>
+
+{% endblock %}
+
+{% block areab %}
+<section class="container px-5 py-24 mx-auto mb-2 pd--mx-4 first-child--mt-0">
+  <h2 class="mt-0 h3">Relevant Reads</h2>
+  <ul class="grid gap-8 pl-0 list-none md--grid-cols-3">
+    <li>
+      {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li>
+      {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li>
+      {% include "components/component--card--vertical--5.twig" %}
+    </li>
+  </ul>
+</section>
+{% include "components/region--newsletter--1.twig" %}
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

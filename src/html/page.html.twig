@@ -1,0 +1,36 @@
+{% extends "layouts/side-l-r.twig" %}
+{% set title = "Page" %}
+{% set pageTitle = "A basic page" %}
+{% set showTitle = TRUE %}
+
+{% block masthead %}
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+
+	{{ pageIntro }}
+	{{ loremIpsum }}
+
+{% endblock %}
+
+{% block areab %}
+	{% include "components/navigation--sub.twig" %}
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

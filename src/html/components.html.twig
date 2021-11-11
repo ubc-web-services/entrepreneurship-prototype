@@ -1,0 +1,178 @@
+{% extends "layouts/default.twig" %}
+{% set title = "Components Page" %}
+{% set pageTitle = "Web Styles" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/toc.twig" %}
+
+<h1 class="mt-1 text-ubc-blue">{{ unitName }} {{ pageTitle }}</h1>
+
+<h2 class="mt-12 " id="colors">Colours</h2>
+<hr />
+{% include "components/color.twig" %}
+
+<h2 class="mt-12 " id="typography">Typography</h2>
+<hr />
+
+{% include "components/type.twig" %}
+
+<h2 id="buttons">Buttons</h2>
+<hr />
+{% include "components/component--button.twig" %}
+
+<h2 id="tables">Tables</h2>
+<hr />
+{% include "components/component--table.twig" %}
+
+<h2 id="icons">SVG Icons</h2>
+<hr />
+{% include "components/component--icon.twig" %}
+
+<h2 id="forms">Forms</h2>
+<hr />
+{% include "components/form--sample.twig" %}
+
+<h2 class="mt-12 " id="messages">Messages</h2>
+<hr />
+{% include "components/component--message.twig" %}
+
+<h2 class="mt-12 " id="boxes">Boxes</h2>
+<hr />
+{% include "components/component--box.twig" %}
+
+<h2 class="mt-12 " id="tags">Tags / Badges</h2>
+<hr />
+{% include "components/component--tag.twig" %}
+
+<h2 class="mt-12 " id="media">Media</h2>
+<hr />
+
+<h3 id="media-video" tabindex="-1">Embedded Video</h3>
+<div class="mb-4 media-wrapper">
+	{% include "components/media--video.twig" %}
+</div>
+
+{% include "components/media--video--caption.twig" %}
+<script type="text/plain" class="language-markup">
+{% include "components/media--video--caption.twig" %}
+</script>
+
+
+<h3 id="media-map" class="mb-4" tabindex="-1">Embedded iFrame</h3>
+<div class="media-wrapper">
+	{% include "components/media--map.twig" %}
+</div>
+
+<h3 id="media-styles" tabindex="-1">Image Styles</h3>
+{% include "components/media--image-styles.twig" %}
+
+<!--
+<h2 id="navigation-subnav" class="mt-12 ">Navigation: Subnavigation</h2>
+<hr />
+{% include "components/navigation--sub.twig" %}
+-->
+
+<h2 id="navigation-breadcrumbs" class="mt-12 ">Navigation: Breadcrumbs</h2>
+<hr />
+{% include "components/navigation--breadcrumb.twig" %}
+
+<h2 id="navigation-pager" class="mt-12 ">Navigation: Pager</h2>
+{% include "components/navigation--pager.twig" %}
+
+
+<h2 class="mt-12 " id="social">Social</h2>
+<hr />
+<div class="md--flex md---mx-4">
+	<div class="md--flex-1 md--px-4">
+		<h3 class="my-4">Embedded Buzzsprout podcast</h3>
+			<div id="buzzsprout-player-8620402" class="my-12"></div>
+			<script src="https://www.buzzsprout.com/1718995/8620402-iwd2021-leadership-in-a-time-of-crisis.js?container_id=buzzsprout-player-8620402&player=small" type="text/javascript" charset="utf-8"></script>
+	</div>
+	<div class="md--flex-1 md--px-4">
+		<h3 class="my-4">Twitter stream</h3>
+		{% include "components/component--social--twitter.twig" %}
+	</div>
+</div>
+
+<h2 class="mt-12 " id="cards" >Cards</h2>
+<hr />
+
+<h3 id="cards-vertical">Cards: Vertical Card Styles</h3>
+{% include "components/component--cards--vertical.twig" %}
+
+<h3 id="cards-horizontal" class="mb-leading">Card: Horizontal Card Styles</h3>
+{% include "components/component--cards--horizontal.twig" %}
+
+<h3 id="cards-image">Card: Image Card Styles</h3>
+{% include "components/component--cards--image.twig" %}
+
+<p class="text-sm text-grey-500">Note: these styles can have accessibility issues as the text has poor and variable readbility over the image.</p>
+
+<h2 class="mt-12 " id="layout">Layout</h2>
+<hr />
+{% include "components/layout--grid.twig" %}
+
+<h2 class="mt-12 " id="accordions">Accordions</h2>
+<hr />
+{% include "components/component--accordion.twig" %}
+
+<h2 class="mt-12 " id="tabcordions">Tabcordions: Tabs (Desktop) to Accordions (Mobile)</h2>
+<hr />
+{% include "components/component--tabs.twig" %}
+<script type="text/plain" class="language-markup">
+	{% include "components/component--tabs.twig" %}
+</script>
+
+<h2 class="mt-12 " id="tabs">Tabs (Mobile and Desktop)</h2>
+<hr />
+{% include "components/component--tabs--tabs-only.twig" %}
+<script type="text/plain" class="language-markup">
+	{% include "components/component--tabs--tabs-only.twig" %}
+</script>
+
+<h2 class="mt-12 " id="gallery">Gallery Carousel</h2>
+<hr />
+{% include "components/component--carousel--simple.twig" %}
+<script type="text/plain" class="language-markup">
+	{% include "components/component--carousel--simple.twig" %}
+</script>
+
+<h2 class="mt-12 " id="calendar">Calendar</h2>
+<hr />
+{% include "components/component--calendar.twig" %}
+
+<div class="mt-12"></div>
+{% endblock %}
+
+{% block areab %}
+
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+
+{% endblock %}
+
+{% block custom_css %}
+<style>
+	.stroke-noscale {
+		vector-effect: non-scaling-stroke;
+	}
+</style>
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

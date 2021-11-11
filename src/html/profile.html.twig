@@ -1,0 +1,52 @@
+{% extends "layouts/side-l.twig" %}
+{% set title = "Profile" %}
+{% set pageTitle = "Profile Name" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col sm--flex-row">
+  <div class="mb-leading sm--mb-0 sm--w-2/5 sm--pr-1 img-cover">
+    <img alt="Claire Preston" src="img/demo/Claire_Preston_0 1.jpg" loading="lazy" height="639" width="619">
+  </div>
+  <div class="sm--flex sm--flex-col sm--justify-end sm--w-3/5">
+    <h1 class="mt-0">{{ pageTitle }}<span class="pl-2 text-sm">BSc, MSc</span></h1>
+    <h2 class="mt-0 text-lg font-normal">Job Title</h2>
+    <ul class="py-4 pl-0 list-none border-t border-b sm--mb-0 border-grey-300">
+      <li class=""><strong>Phone</strong> <a href="tel:6048222222">(604) 822-2222</a></li>
+      <li class=""><strong>Email</strong> <a href="mailto:profile.name@ubc.ca">profile.name@ubc.ca</a></li>
+      <li class=""><strong>Website</strong> <a href="https://ubc.ca">ubc.ca</a></li>
+      <li class=""><strong>Office</strong> KAIS 4040</li>
+    </ul>
+  </div>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+{% endblock %}
+
+{% block areab %}
+{% include "components/navigation--sub.twig" %}
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

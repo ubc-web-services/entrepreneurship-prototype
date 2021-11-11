@@ -1,0 +1,67 @@
+{% extends "layouts/side-l.twig" %}
+{% set title = "Page" %}
+{% set pageTitle = "About us" %}
+{% set showTitle = TRUE %}
+
+{% block masthead %}
+<figure class="my-0 img-cover w-constrain">
+{% include "components/media--image.twig" %}
+</figure>
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ul class="grid gap-8 pl-0 mt-3 list-none sm--grid-cols-3">
+  <li>
+    <article class="relative flex flex-col h-full p-4 text-center text-white bg-gradient--unit hover--box-shadow">
+      <p class="flex-1 my-6">
+        <strong>UBC ranked</strong>
+        <span class="block text-4xl font-semibold leading-tight">#34</span>
+        <span class="block text-sm">in the world</span>
+      </p>
+      <a href="https://ubc.ca" class="block text-sm text-right text-white no-underline hover--underline flex-no-grow link-expand hover--text-white ">World university ranking</a>
+    </article>
+  </li>
+  <li>
+    {% include "components/component--card--vertical--8.twig" %}
+  </li>
+  <li>
+    <article class="relative flex flex-col h-full p-4 text-center text-white bg-gradient--unit hover--box-shadow">
+      <p class="flex-1 my-6">
+        <strong>UBC ranked</strong>
+        <span class="block text-4xl font-semibold leading-tight">#7</span>
+        <span class="block text-sm">for impact</span>
+      </p>
+      <a href="https://ubc.ca" class="block text-sm text-right text-white no-underline hover--underline flex-no-grow link-expand hover--text-white ">Impact rankings and more text to test etc and more words</a>
+    </article>
+  </li>
+</ul>
+
+<div class="mx-auto mt-3 container-sm sm--px-3">
+{% include "components/component--carousel--cards.twig" %}
+</div>
+{% endblock %}
+
+{% block areab %}
+{% include "components/navigation--sub.twig" %}
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

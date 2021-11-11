@@ -1,0 +1,29 @@
+<header class="dbi-header">
+	<div class="container mx-auto dbi-header__container">
+		<a href="#" title="The University of British Columbia Logo" class="dbi-header__branding">
+			<span class="visually-hidden">The University of British Columbia</span>
+			<svg role="presentation" class="dbi-header__logo">
+				<use xlink:href="#logo-ubc"></use>
+			</svg>
+		</a>
+		<h2 class="dbi-header__unit-name">{{ unitName }}</h2>
+		<div class="dbi-header__utility">
+			<form>
+				<label class="dbi-header__utility-label">SEARCH</label>
+				<svg role="presentation" class="dbi-header__icon">
+					<use xlink:href="#icon-search"></use>
+				</svg>
+			</form>
+			<a class="dbi-header__utility-link" href="#" title="Site menu">
+				<span class="dbi-header__utility-label">MENU</span>
+				<svg role="presentation" class="dbi-header__icon">
+					<use xlink:href="#icon-menu"></use>
+				</svg>
+			</a>
+		</div>
+		<nav class="dbi-header__nav">
+			<h3 class="visually-hidden">Primary Navigation</h3>
+			{% include "navigation--main.twig" %}
+		</nav>
+	</div>
+</header>

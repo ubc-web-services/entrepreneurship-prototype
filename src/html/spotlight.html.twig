@@ -1,0 +1,121 @@
+{% extends "layouts/narrow.twig" %}
+{% set title = "Spotlight" %}
+{% set pageTitle = "From sci-fi to computer engineering" %}
+{% set showTitle = TRUE %}
+
+{% block masthead %}
+{% endblock %}
+
+{% block precontent %}
+<div class="container px-5 mx-auto md--px-4">
+  <div class="pt-leading">
+		<Message title="Coronavirus (Covid-19) Information" classes="message--status" svgicon="icon-info">
+    <p>Some status message content. <a href="#" class="underline">Learn more</a>.</p>
+  </Message>
+  </div>
+</div>
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+<section>
+  <p class="text-lead">"I consider the world around me on a daily basis and find that there are so many aspects that I believe can be improved upon or solved with new technology developments."</p>
+</section>
+
+<section class="my-2 md---mx-2">
+  <figure class="w-full img-and-caption">
+    <div data-widget-image="img">
+      <img alt="Claire Preston" src="img/demo/Claire_Preston.jpg" loading="lazy" height="643" width="954" /></div>
+    <figcaption>Some kind of caption on the image</figcaption>
+  </figure>
+</section>
+
+<div class="flex content-center justify-between my-1">
+  <h2 class="self-center mt-0">Claire Preston</h2>
+  <div class="self-center m-0">
+    {% include "components/component--social--share--2.twig" %}
+  </div>
+</div>
+
+<p><strong>Degree:</strong> <a href="#">Master of Applied Science (MASc)</a><br />
+<strong>Grad year:</strong> 2020<br />
+<strong>Program:</strong> <a href="#">Electrical and Computer Engineering</a></p>
+
+<p>As a science fiction enthusiast, I have always been fascinated with stretching the possibilities of reality. This is perhaps what led me to study physics for my bachelor’s degree. During that time, I developed a keen interest in applying physics to the development of new devices in order to change the way we interact with our world and one another. My time at UBC was spent working on soft electronics, done by taking a conventional hard electronic device such as a smartphone and asking — can we make this into something soft? Stretchable? How will this change the way we sense and interact with our surroundings?</p>
+
+<p>My main thesis project is on the development of a stretchable display using innovative conducting polymers towards low-power conformable devices, while a secondary project involves the development of soft tactile sensors. Innovations in these areas could lead to unconventionally flexible devices that could have drastic implications for biomedical devices, wearable electronics and humanoid robotics.</p>
+
+<h3>Why did you choose to go into your field of study at UBC?</h3>
+<p class="mt-0">My research internships and the strong mentorship I received during my undergraduate degree helped me hone in on my passion — the application of scientific principles to real world problems for the advancement of technology. I have always liked designing things and missed doing so during my more theoretical undergraduate degree. I learned how to investigate the deeper understanding of our physical reality, but then I wanted to apply this understanding to improve upon existing technology. I have found that taking innovative materials developed using fundamental science and applying them to new devices demands the perfect blend of creative and analytical skills. This practice can produce almost immediate tangible impacts.</p>
+
+<h3>What has made your time at UBC memorable?</h3>
+<p class="mt-0">I have been gifted with an amazing supervisor and research group. In addition to having the chance to contribute to cutting edge projects, I had the privilege of choosing a research topic I was interested in and following it through for two years.</p>
+
+<p>While I am sure I will never forget the long evenings spent in the lab, some of the most memorable times have been while traveling for research. I had the chance to do some work at a lab in France — I got to cycle to the lab daily with my supervisor and eat pain au chocolat! I’ve also had the opportunity to visit Japan and various places in the US to exchange ideas with other research teams.</p>
+
+<h3>What has been the most valuable non-academic studying at UBC?</h3>
+<p class="mt-0">First as a councillor and now a member of the House Finance Committee in the Graduate Student Society, over the past two years I have represented the interests of graduate students in my department by debating and voting on policies that directly impact our experience. These policies affect graduate student funding, advocacy and professional and networking opportunities. It is easy to get wrapped up in your research project, but in the GSS I was able to work with students in other programs, greatly diversifying my knowledge and skills. Now, I know how to manage a six figure budget and understand many intricacies of university-level government decision making. I would highly recommend getting involved in a student society as a graduate student as there are so many skills and connections that can be built that would not be developed while working in the laboratory.</p>
+
+<h3>Tell us about your experience in your program. What have you learned that is most valuable?</h3>
+<p class="mt-0">One of the most valuable things I learned is the high-level research process and how to obtain project funding and support. I was lucky to have the opportunity to closely observe relationships between academia and industry to learn how the two groups collaborate and move forward on innovative projects while balancing different interests. The matter of intellectual property is central to many of these endeavours and can greatly affect the direction in which a project can move forward or be commercialized.</p>
+
+<h3>How are you applying the skills you learned through your studies at UBC?</h3>
+<p class="mt-0">During my master’s, I learned a lot about electronic device design and new materials for innovative devices with wide applications. I was also a trainee in the Nanomat CREATE program, in which I received special training in nanomaterials and characterization. This established the knowledge base I was able to build on and apply to my research projects in soft electronic device design.</p>
+
+<h3>What advice would you give a student entering your degree program?</h3>
+<p class="mt-0">If you have an idea of what you want out of your degree, it is important to plan early to make sure you learn the skills you’re looking to learn in the amount of time a master’s degree allows — two years is a very short amount of time! If you would like to incorporate international conferences or internships, you have to start figuring that out right from the beginning.</p>
+
+<h3>How do you feel your degree has benefitted you compared to a different field of study?</h3>
+<p class="mt-0">Moving from science to electrical engineering means I am still using much of the knowledge I learned as a science student by applying it to designing devices. Each person has their own major field of interest — for me, this transition was the most ideal fit to learn what I wanted: how to apply science to engineering innovative devices. I felt this degree was the best path forward to a career in this direction.</p>
+
+<h3>Where do you find your inspiration?</h3>
+<p class="mt-0">I consider the world around me on a daily basis and find that there are so many aspects that I believe can be improved upon or solved with new technology developments. Several works of science fiction, like Star Trek, depict a positive future with a more sustainable, equal and compassionate utopian society with fantastic technological capabilities. I believe these have long inspired people like me to dream about and work towards what our world could become. In the real world, I have long been inspired by scientists, especially physicists, and clean energy technology advocates. Both groups are able to envision a reality beyond our own, perhaps along the lines of a Star Trek universe, that could very much become possible in the future with technology advancement.</p>
+
+<section class="my-2 md---mx-2">
+  {% include "components/media--video--caption.twig" %}
+</section>
+
+<ul class="flex flex-wrap pl-0 list-none tags">
+  <li class="pr-2 my-2">
+    <a href="#">This is a tag</a>
+  </li>
+  <li class="pr-2 my-2">
+    <a href="#">This is a tag</a>
+  </li>
+  <li class="pr-2 my-2">
+    <a href="#">This is a tag</a>
+  </li>
+</ul>
+{% endblock %}
+
+{% block areab %}
+<section class="container px-5 mx-auto mb-2 pd--mx-4 first-child--mt-0">
+  <h2 class="px-4 mt-0">Other Spotlights</h2>
+  <ul class="grid gap-8 pl-0 list-none md--grid-cols-3">
+    <li>
+      {% include "components/component--card--vertical--3.twig" %}
+    </li>
+    <li>
+      {% include "components/component--card--vertical--3.twig" %}
+    </li>
+    <li>
+      {% include "components/component--card--vertical--3.twig" %}
+    </li>
+  </ul>
+  <p class="mt-3 text-center md--text-left md--px-4"><a href="#" class="unit-button">See all spotlights</a></p>
+</section>
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

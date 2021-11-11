@@ -1,0 +1,89 @@
+{% extends "layouts/side-l.twig" %}
+{% set title = "Basic Page" %}
+{% set pageTitle = "Basic Page Title" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+{% include "components/component--masthead--image-title.twig" %}
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+
+<h2 class="mt-0">Dolosit Amonsectetur (Text)</h2>
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<h3>Lorem Ipsum Dolosit Amonsectetur (Text)</h3>
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<h3>Risus Commodo Viverra Maecenas (Card options)</h3>
+<p>Various examples and options for cards that could be used in any page layout.</p>
+
+<ul class="grid gap-8 pl-0 mt-1 list-none sm--grid-cols-3">
+  <li cla>
+    <article class="box-shadow bg-ubc-blue ubc-card ubc-card--vert">
+      <div class="ubc-card__media img-cover">
+        <img alt="some alternate text" src="img/demo/headshot.jpg" height="355" width="355" loading="lazy" />
+      </div>
+      <div class="p-6 ubc-card__content md--self-center first-child--mt-0">
+        <h3 class="font-semibold text-center h4"><a href="#" class="text-white no-underline link-expand">A long title that will probably wrap</a></h3>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="box-shadow bg-ubc-blue ubc-card ubc-card--vert">
+      <div class="ubc-card__media img-cover">
+        <img alt="some alternate text" src="img/demo/headshot.jpg" height="355" width="355" loading="lazy" />
+      </div>
+      <div class="p-6 ubc-card__content md--self-center first-child--mt-0">
+        <h3 class="font-semibold text-center h4"><a href="#" class="text-white no-underline link-expand">A title</a></h3>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="box-shadow bg-ubc-blue ubc-card ubc-card--vert">
+      <div class="ubc-card__media img-cover">
+        <img alt="some alternate text" src="img/demo/headshot.jpg" height="355" width="355" loading="lazy" />
+      </div>
+      <div class="p-6 ubc-card__content md--self-center first-child--mt-0">
+        <h3 class="font-semibold text-center h4"><a href="#" class="text-white no-underline link-expand">Some other title</a></h3>
+      </div>
+    </article>
+  </li>
+</ul>
+
+<h3>Quis Ipsum Suspendisse Ultrices Gravida (Featurette)</h3>
+<p>Examples of ways the featurette feature could be used.</p>
+
+<div class="my-1 sm--flex sm--keyline-v keyline--grey">
+  <article class="sm--flex-1 sm--pr-3">
+    <h3>Title</h3>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+  </article>
+  <article class="sm--flex-1 sm--pl-3">
+    <h3>Title</h3>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+  </article>
+</div>
+
+{% endblock %}
+
+{% block areab %}
+{% include "components/navigation--sub.twig" %}
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% include "components/region--columns-w-divider--card.twig" %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

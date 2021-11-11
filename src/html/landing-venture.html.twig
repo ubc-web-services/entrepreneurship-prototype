@@ -1,0 +1,128 @@
+{% extends "layouts/landing.twig" %}
+{% set title = "Abcellera" %}
+{% set pageTitle = "Abcellera" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+{% include "components/component--masthead--image-title.twig" %}
+{% endblock %}
+
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+
+{% endblock %}
+
+{% block content %}
+<figure role="group">
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+    <div class="field__item">
+      <img src="img/demo/logo-sample.png" height="131" width="230" alt="Abcellera logo" typeof="foaf:Image" loading="lazy">
+    </div>
+  </div>
+</figure>
+<h2 class="mt-0 h3"><span class="font-normal text-grey-700">Therapeutic monoclonal antibody discovery.</span></h2>
+<p>Nature is the world's lorem ipsum dolor sit amet, ex causae nonumes salutandi quo, ea eos rebum deleniti abhorreant. At pri erat choro, facer principes mei ei. Per movet viderer integre ex, modo malis cum ut, pro id atqui reformidans complectitur. Sea indoctum philosophia te. At eos aeterno deserunt, falli graecis vix no, vix velit nemore utroque in.</p>
+
+<div class="grid grid-cols-1 gap-6 p-8 mt-8 md--grid-cols-2 bg-grey-100">
+  <div>Cohort: <strong>2018/2019</strong></div>
+  <div>Program: <strong>Lab2Launch</strong></div>
+  <div>Stage: <strong>Complete</strong></div>
+  <div>Stream: <strong>Stream Name</strong></div>
+</div>
+
+<h3 class="mt-6 font-sans text-base">Follow on social</h3>
+<ul class="flex flex-wrap pl-0 list-none">
+  <li class="pr-4 my-2">
+    <a href="#test" class="block w-12 h-12 p-2 leading-none no-underline bg-ubc-blue hover--bg-ubc-blue-cobalt"><svg role="img" class="inline-block w-8 h-8 text-white"><use xlink:href="#icon-facebook"></use></svg> <span class="sr-only">Find us on Facebook</span></a>
+  </li>
+  <li class="pr-4 my-2">
+    <a href="#test" class="block w-12 h-12 p-2 leading-none no-underline bg-ubc-blue hover--bg-ubc-blue-cobalt">
+      <svg role="img" class="inline-block w-8 h-8 text-white">
+        <use xlink:href="#icon-linkedin"></use>
+      </svg>
+      <span class="sr-only">Find us on Linkedin</span>
+    </a>
+  </li>
+  <li class="pr-4 my-2">
+    <a href="#test" class="block w-12 h-12 p-2 leading-none no-underline bg-ubc-blue hover--bg-ubc-blue-cobalt">
+      <svg role="img" class="inline-block w-8 h-8 text-white">
+        <use xlink:href="#icon-twitter"></use>
+      </svg>
+      <span class="sr-only">Find us on Twitter</span>
+    </a>
+  </li>
+  <li class="pr-4 my-2">
+    <a href="#test" class="block w-12 h-12 p-2 leading-none no-underline bg-ubc-blue hover--bg-ubc-blue-cobalt">
+      <svg role="img" class="inline-block w-8 h-8 text-white">
+        <use xlink:href="#icon-instagram"></use>
+      </svg>
+      <span class="sr-only">Share on Instagram</span>
+    </a>
+  </li>
+  <li class="pr-4 my-2">
+    <a href="#test" class="block w-12 h-12 p-2 leading-none no-underline bg-ubc-blue hover--bg-ubc-blue-cobalt">
+      <svg role="img" class="inline-block w-8 h-8 text-white">
+        <use xlink:href="#icon-tictok"></use>
+      </svg>
+      <span class="sr-only">Share on tictok</span>
+    </a>
+  </li>
+</ul>
+
+{% endblock %}
+
+{% block areab %}
+<section>
+  <div class="relative flex justify-center md--transform md---translate-y-20 bg-unit-secondary clip-polygon-1">
+    <div class="p-16 xs--p-20 xl--p-32">
+      <h3 class="mt-0 text-lg font-black"><span class="font-normal">Interested in</span> learning more?</h3>
+      <p class="mt-2">At pri erat choro, facer principes mei.</p>
+      <p class="mt-2"><a href="#" class="text-sm unit-button link-expand">Website</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block areac %}
+<section class="py-6">
+  <h3 class="mt-0 h4 text-grey-700">Founders</h3>
+  <ul class="grid grid-cols-1 gap-8 pt-2 pl-0 list-none sm--grid-cols-2 md--grid-cols-3">
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--6.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--6.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--6.twig" %}
+    </li>
+  </ul>
+</section>
+
+<section class="py-6">
+  <h3 class="mt-0 h4 text-grey-700">Achievements</h3>
+  <ul class="grid grid-cols-1 gap-8 pt-2 pl-0 list-none sm--grid-cols-2 md--grid-cols-3">
+    <li>{% include "components/component--card--vertical--8.twig" %}</li>
+    <li>{% include "components/component--card--vertical--8.twig" %}</li>
+  </ul>
+</section>
+
+{% endblock %}
+
+{% block prefooter %}
+
+<section class="py-16">
+{% include "components/component--carousel--simple.twig" %}
+</section>
+
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

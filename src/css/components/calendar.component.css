@@ -1,0 +1,110 @@
+$border-color: #e0e0e0;
+$background-color: #fff;
+$background-color--empty: #f7f7f7;
+$text-color--days: #000;
+
+.calendar-header {
+  display: flex;
+}
+
+.calendar-header h3 {
+  flex: 1;
+}
+
+.calendar-header nav {
+  flex: 0;
+}
+
+/* today */
+.calendar-calendar .month-view .full tr td.today,
+.calendar-calendar .month-view .full tr.odd td.today,
+.calendar-calendar .month-view .full tr.even td.today,
+.calendar-calendar .month-view .full tr td.single-day.today,
+.calendar-calendar .month-view .full td.date-box.today {
+  border-color: var(--color-primary);
+}
+
+
+.calendar-calendar tr {
+  border: none;
+}
+
+.calendar-calendar td {
+  color: $text-color--days;
+  border: 1px solid $border-color;
+  text-align: center;
+}
+
+/* days of week */
+.calendar-calendar th.days {
+  color: $text-color--days;
+  border-top: 1px solid $border-color;
+  background-color: $background-color;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: .25rem 0;
+}
+
+.calendar-calendar div.day {
+  float: none;
+  clear: none;
+  width: auto;
+  padding: 1em 0.25em .5em 0.25em;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-width: 0 0 0 1px;
+  background-color: $background-color;
+  }
+
+/* days outside of month */
+.calendar-calendar td.empty {
+  color: $text-color--days;
+  border-color: $border-color;
+  background: $background-color--empty;
+}
+
+/* single calendar item */
+.calendar-calendar .month-view .full td.single-day div.monthview,
+.calendar-calendar .week-view .full td.single-day div.weekview,
+.calendar-calendar .day-view .full td.single-day div.dayview {
+  overflow: hidden;
+  width: auto;
+  padding: .25rem;
+  background: var(--color-accent);
+}
+
+/* single calendar item link */
+.calendar-calendar td a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.calendar-calendar .month-view .full .inner .monthview,
+.calendar-calendar .week-view .full .inner .weekview,
+.calendar-calendar .day-view .full .inner .dayview {
+  border-radius: 0;
+  position: relative;
+}
+
+.calendar-calendar .day-view td .stripe,
+.calendar-calendar .month-view .full td .stripe,
+.calendar-calendar .week-view .full td .stripe {
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.calendar-calendar .day-view td .stripe + .contents,
+.calendar-calendar .month-view .full td .stripe + .contents,
+.calendar-calendar .week-view .full td .stripe + .contents {
+  z-index: 5;
+  display: block;
+  position: relative;
+}

@@ -1,0 +1,47 @@
+{% extends "layouts/default.twig" %}
+{% set title = "Demo Page" %}
+{% set pageTitle = "Demo Accordion + Tabcordion" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+
+<h1 class="text-ubc-blue">{{ unitName }} {{ pageTitle }}</h1>
+
+<h2 class="mt-12 uppercase" id="accordions">Accordions</h2>
+<hr />
+{% include "components/component--accordion.twig" %}
+
+<h2 class="mt-12 uppercase" id="tabcordions">Tabcordions: Tabs (Desktop) to Accordions (Mobile)</h2>
+<hr />
+{% include "components/component--tabcordion.twig" %}
+
+{% endblock %}
+
+{% block areab %}
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% endblock %}
+
+{% block custom_css %}
+<style>
+	.stroke-noscale {
+		vector-effect: non-scaling-stroke;
+	}
+</style>
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

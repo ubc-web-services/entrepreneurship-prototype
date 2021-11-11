@@ -1,0 +1,32 @@
+/** @define ubc-gradient */
+
+/* gradients */
+.bg-gradient {
+	background: linear-gradient(227deg, $ubc-blue-cobalt 2.5%, $ubc-blue-sea 33%, $ubc-blue 80%);
+}
+
+.bg-gradient--screen,
+.bg-gradient--screen--unit,
+.bg-gradient--part-screen,
+.bg-gradient--part-screen--unit {
+	position: relative;
+}
+
+.bg-gradient--screen::after,
+.bg-gradient--screen--unit::after,
+.bg-gradient--part-screen::after,
+.bg-gradient--part-screen--unit::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(227deg, $ubc-blue-cobalt 2.5%, $ubc-blue-sea 33%, $ubc-blue 80%);
+	opacity: .6;
+	content: '';
+}
+
+.bg-gradient--part-screen::after {
+	background: linear-gradient(227deg, rgba(255, 255, 255, 0) 5%, $ubc-blue-cobalt 40%, $ubc-blue-sea 60%, $ubc-blue 80%);
+}

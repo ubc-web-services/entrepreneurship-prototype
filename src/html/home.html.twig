@@ -1,0 +1,159 @@
+{% extends "layouts/home.twig" %}
+{% set title = "Welcome" %}
+{% set pageTitle = "e@UBC Homepage" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+{% include "components/component--masthead.twig" %}
+{% endblock %}
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+<section class="container px-5 py-2 mx-auto md--px-4">
+<div class="md--px-4">
+  <h2 class="mt-0 font-black"><span class="font-normal text-grey-700">We Inspire and Encourage</span> Entrepreneurial Thinking</h2>
+  <p class="font-serif text-lead">Lorem ipsum dolor sit amet, ex causae nonumes salutandi quo, ea eos rebum deleniti abhorreant. At pri erat choro, facer principes mei ei. Per movet viderer integre ex, modo malis cum ut, pro id atqui reformidans complectitur. Sea indoctum philosophia te. At eos aeterno deserunt, falli graecis vix no, vix velit nemore utroque in.</p>
+  </div>
+</section>
+{% endblock %}
+
+{% block areab %}
+
+<section>
+  <div class="relative flex justify-center md--transform md---translate-y-20 bg-unit-secondary clip-polygon-1">
+    <div class="p-16 xs--p-20 xl--p-32">
+      <h3 class="mt-0 text-lg font-black"><span class="font-normal">Are you based in</span> the Okanagan?</h3>
+      <p class="mt-2">Visit the UBCO site for location specific details.</p>
+      <p class="mt-2"><a href="#" class="text-sm unit-button link-expand">Visit site</a></p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block areac %}
+
+<ul class="grid grid-cols-1 gap-8 pt-12 pl-0 list-none sm--grid-cols-3">
+  <li>
+  {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+  {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+  {% include "components/component--card--vertical--3.twig" %}
+  </li>
+</ul>
+
+<ul class="grid grid-cols-2 gap-8 pt-24 pl-0 list-none sm--grid-cols-3 lg--grid-cols-6">
+  <li class="col-span-2 sm--col-span-1">
+    <h3 class="mt-0 font-black h4"><span class="font-normal text-grey-700">Meet our</span> Entrepreneurs in Residence</h3>
+    <p class="hidden sm--block"><a href="#" class="unit-button">View all</a></p>
+  </li>
+  <li>
+    <article class="relative block overflow-hidden hover--cursor-pointer group group-hover isolate">
+      <div class="img-cover screen screen-unit-primary">
+        <img alt="some alternate text" src="img/demo/headshot4.jpg" height="350" width="350" loading="lazy" />
+      </div>
+      <div class="absolute inset-0 z-30 flex p-8 hover--appear-from-bottom">
+        <h4 class="self-center w-full mt-0 text-xl text-center text-shadow"><a href="#" class="text-white no-underline link-expand hover--text-white">Michelle Obama</a></h4>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="relative block overflow-hidden hover--cursor-pointer group group-hover isolate">
+      <div class="img-cover screen screen-unit-primary">
+        <img alt="some alternate text" src="img/demo/headshot4.jpg" height="350" width="350" loading="lazy" />
+      </div>
+      <div class="absolute inset-0 z-30 flex p-8 hover--appear-from-bottom">
+        <h4 class="self-center w-full mt-0 text-xl text-center text-shadow"><a href="#" class="text-white no-underline link-expand hover--text-white">Michelle Obama</a></h4>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="relative block overflow-hidden hover--cursor-pointer group group-hover isolate">
+      <div class="img-cover screen screen-unit-primary">
+        <img alt="some alternate text" src="img/demo/headshot4.jpg" height="350" width="350" loading="lazy" />
+      </div>
+      <div class="absolute inset-0 z-30 flex p-8 hover--appear-from-bottom">
+        <h4 class="self-center w-full mt-0 text-xl text-center text-shadow"><a href="#" class="text-white no-underline link-expand hover--text-white">Michelle Obama</a></h4>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="relative block overflow-hidden hover--cursor-pointer group group-hover isolate">
+      <div class="img-cover screen screen-unit-primary">
+        <img alt="some alternate text" src="img/demo/headshot4.jpg" height="350" width="350" loading="lazy" />
+      </div>
+      <div class="absolute inset-0 z-30 flex p-8 hover--appear-from-bottom">
+        <h4 class="self-center w-full mt-0 text-xl text-center text-shadow"><a href="#" class="text-white no-underline link-expand hover--text-white">Michelle Obama</a></h4>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="relative block overflow-hidden hover--cursor-pointer group group-hover isolate">
+      <div class="img-cover screen screen-unit-primary">
+        <img alt="some alternate text" src="img/demo/headshot4.jpg" height="350" width="350" loading="lazy" />
+      </div>
+      <div class="absolute inset-0 z-30 flex p-8 hover--appear-from-bottom">
+        <h4 class="self-center w-full mt-0 text-xl text-center text-shadow"><a href="#" class="text-white no-underline link-expand hover--text-white">Michelle Obama</a></h4>
+      </div>
+    </article>
+  </li>
+  <li class="self-center text-center sm--hidden">
+    <p><a href="#" class="unit-button">View all</a></p>
+  </li>
+</ul>
+
+<ul class="grid grid-cols-1 gap-8 py-24 pl-0 list-none sm--grid-cols-3">
+  <li class="pb-6 xl--pb-9">
+  {% include "components/component--card--vertical--2.twig" %}
+  </li>
+  <li class="pb-6 xl--pb-9">
+  {% include "components/component--card--vertical--2.twig" %}
+  </li>
+  <li class="pb-6 xl--pb-9">
+  {% include "components/component--card--vertical--2.twig" %}
+  </li>
+</ul>
+
+{% endblock %}
+
+{% block prefooter %}
+{% include "components/region--newsletter--1.twig" %}
+
+<section>
+  <div class="container grid grid-cols-1 gap-8 px-5 py-16 mx-auto md--grid-cols-2 md--px-4">
+    <div class="">
+      <h2>What we're up to</h2>
+      <ol class="pl-0 my-0 list-none">
+        <li class="my-8">{% include "components/component--card--horizontal--1.twig" %}</li>
+        <li class="my-8">{% include "components/component--card--horizontal--1.twig" %}</li>
+        <li class="my-8">{% include "components/component--card--horizontal--1.twig" %}</li>
+      </ol>
+      <p class="my-8"><a href="" class="unit-button">View all</a></p>
+    </div>
+    <div class="">
+      <h2>Featured News</h2>
+      <ol class="pl-0 my-0 list-none">
+        <li class="my-8">{% include "components/component--card--horizontal--1.twig" %}</li>
+        <li class="my-8">{% include "components/component--card--horizontal--1.twig" %}</li>
+        <li class="my-8">{% include "components/component--card--horizontal--1.twig" %}</li>
+      </ol>
+      <p class="my-8"><a href="" class="unit-button">View all</a></p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

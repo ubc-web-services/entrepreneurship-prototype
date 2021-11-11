@@ -1,0 +1,158 @@
+/** @define drupal.entity.moderation */
+
+/*
+* This file contains styles for the drupal content moderation form
+*/
+
+/* Add CSS variables (uses postcss-simple-vars) */
+
+/*
+* This file contains all default application-wide Sass and CSS3 variables.
+*/
+
+/* used to determine when to trigger an external icon */
+
+/* Type Variables */
+
+/* Type Sizes */
+
+/* 12px */
+
+/* 14px */
+
+/* 16px */
+
+/* 18px */
+
+/* 20px */
+
+/* 24px */
+
+/* 28px */
+
+/* 32px */
+
+/* 36px */
+
+/* 44px */
+
+/* 54px */
+
+/* 64px */
+
+/* 80px */
+
+/* 122px */
+
+/* 12px */
+
+/* 14px */
+
+/* 16px */
+
+/* 18px */
+
+/* 20px */
+
+/* 24px */
+
+/* 28px */
+
+/* 32px */
+
+/* 36px */
+
+/* 44px */
+
+/* 54px */
+
+/* 64px */
+
+/* 80px */
+
+/* 122px */
+
+/* Colors */
+
+/* rgb - (0,33,69) */
+
+/* rgb - (0,58,121) */
+
+/* rgb - (0,85,183) */
+
+/* rgb - (64,180,229) */
+
+/* rgb - (110,196,232) */
+
+/* rgb - (151,212,233) */
+
+/* rgb - (255,243,249)  (was #e1f3f9) */
+
+/* Default colors */
+
+/* Title weights */
+
+/* Forms */
+
+/* Buttons */
+
+/* Tables */
+
+/* Carousel */
+
+/* Throbber / ajax loading animation */
+
+/* CLF 8 Breakpoints map */
+
+/* CLF 7 Breakpoints map to control version 7 of the CLF separately */
+
+.entity-moderation-form {
+	position: relative;
+	display: block;
+	padding: 0 .5rem;
+	font-size: 75%;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.entity-moderation-form__item {
+	display: block;
+	margin: 0 .5rem;
+}
+
+.entity-moderation-form__item:last-child {
+	margin-right: .5rem;
+}
+
+.entity-moderation-form__item .button {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+	padding: .5rem 1.25rem;
+	color: #fff;
+	text-align: center;
+	background-color: #002145;
+	border: 1px solid #002145;
+}
+
+.entity-moderation-form__item .button:hover {
+	text-decoration: none;
+	background-color: #003a79;
+	border: 1px solid #003a79;
+}
+
+@media (min-width: 768px) {
+
+	.entity-moderation-form {
+		display: flex;
+	}
+
+	.entity-moderation-form__item {
+		flex: 1 1 0%;
+	}
+
+	.entity-moderation-form__item:first-child,
+	.entity-moderation-form__item:last-child {
+		flex: none;
+	}
+
+}

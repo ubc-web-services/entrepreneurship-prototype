@@ -1,0 +1,85 @@
+{% extends "layouts/side-l.twig" %}
+{% set title = "Spotlight Listing" %}
+{% set pageTitle = "Rising Stars 2020" %}
+{% set showTitle = TRUE %}
+
+{% block masthead %}
+{% endblock %}
+
+{% block precontent %}
+<div class="container px-5 mx-auto md--px-4">
+  <div class="pt-leading">
+		<Message title="Coronavirus (Covid-19) Information" classes="message--status" svgicon="icon-info">
+    <p>Some status message content. <a href="#" class="underline">Learn more</a>.</p>
+  </Message>
+  </div>
+</div>
+{% endblock %}
+
+{% block areacta %}
+{% endblock %}
+
+{% block content %}
+<p class="text-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+{% include "components/form--exposed-view.twig" %}
+
+<ul class="grid gap-4 pl-0 mt-3 list-none sm--grid-cols-2 lg--grid-cols-3">
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+  <li>
+    {% include "components/component--card--vertical--3.twig" %}
+  </li>
+</ul>
+
+<div class="flex justify-center">
+{% include "components/navigation--pager.twig" %}
+</div>
+{% endblock %}
+
+{% block areab %}
+{% include "components/navigation--sub.twig" %}
+{% endblock %}
+
+{% block areac %}
+{% endblock %}
+
+{% block prefooter %}
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

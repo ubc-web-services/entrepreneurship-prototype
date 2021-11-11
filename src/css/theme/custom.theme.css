@@ -1,0 +1,310 @@
+/** @define custom */
+
+/*
+* This file contains all styles related to the custom theme.
+*/
+
+/* Inline list */
+.list-inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+/* links on coloured backgrounds */
+.bg-ubc-blue.text-white a:not(.unit-button),
+.bg-ubc-blue-sea.text-white a:not(.unit-button),
+.bg-ubc-blue-cobalt.text-white a:not(.unit-button),
+.bg-ubc-blue.text-white a:hover:not(.unit-button),
+.bg-ubc-blue-sea.text-white a:hover:not(.unit-button),
+.bg-ubc-blue-cobalt.text-white a:hover:not(.unit-button) {
+  color: #fff;
+}
+
+/* paragraphs */
+.paragraph--type--text__inner> :first-child,
+.paragraph--type--text>div>div> :first-child {
+  @apply mt-0;
+}
+
+.paragraph.bg-ubc-blue {
+  color: #fff;
+}
+
+.paragraph.bg-ubc-blue a {
+  color: $ubc-blue-polar;
+}
+
+.paragraph.bg-ubc-blue a:hover {
+  color: $ubc-blue-cornflower;
+}
+
+.paragraph.bg-ubc-blue .unit-button--light {
+  color: $ubc-blue-cobalt;
+}
+
+.paragraph.bg-ubc-blue .unit-button--dark {
+  border-color: $ubc-blue-polar;
+}
+
+.paragraph.bg-ubc-blue .unit-button--light:hover,
+.paragraph.bg-ubc-blue .unit-button--dark:hover {
+  color: #fff;
+}
+
+.paragraph.bg-ubc-blue .unit-button--simple::after {
+  content: url('../img/svg/icon-arrow--polar.svg');
+}
+
+.paragraph.bg-ubc-blue .unit-button--simple:hover::after {
+  content: url('../img/svg/icon-arrow--cornflower.svg');
+}
+
+/* Newsletter Subscription Button */
+
+#newsletter-subscribe {
+  height: 45px;
+  width: 45px;
+  background-color: $ubc-blue;
+  background-image: url('../img/svg/icon--arrow--right.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px 30px;
+  text-indent: -400px;
+  overflow: hidden;
+}
+
+#newsletter-subscribe:hover {
+  background-color: $ubc-blue-cobalt;
+}
+
+@media (min-width: $breakpoint--xl) {
+
+  #newsletter-subscribe {
+    height: 57px;
+    width: 57px;
+    background-size: 40px 40px;
+  }
+
+}
+
+/* secondary menu */
+@media (min-width: $breakpoint--md) {
+  #block-kraken-secondary-menu {
+    display: block !important;
+  }
+
+  #ubc7-unit-menu-secondary.sticky {
+    top: 40px;
+  }
+
+}
+
+@media (min-width: $breakpoint--lg) {
+  #ubc7-unit-menu-secondary.sticky {
+    top: 45px;
+  }
+
+}
+
+@media (max-width: $breakpoint--md--max) {
+  #block-kraken-secondary-menu ul {
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, .3) inset;
+    padding-top: .5rem;
+  }
+
+  #block-kraken-secondary-menu li {
+    @apply border-b border-grey-300;
+  }
+
+  #block-kraken-secondary-menu li:last-of-type {
+    @apply border-none;
+  }
+
+}
+
+/* clip paths */
+.clip-feature {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 100%);
+}
+
+.clip-feature--rev {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+}
+
+.clip-footer {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+}
+
+.clip-polygon-1 {
+  clip-path: polygon(38% 0, 100% 15%, 90% 86%, 21% 100%, 0 23%);
+}
+
+.clip-polygon-2 {
+  clip-path: polygon(38% 0, 100% 15%, 89% 100%, 8% 72%, 0 11%);
+}
+
+.clip-polygon-3 {
+  clip-path: polygon(29% 0, 100% 6%, 97% 88%, 51% 100%, 0 74%);
+}
+
+.clip-polygon-4 {
+  clip-path: polygon(35% 0, 100% 6%, 97% 88%, 8% 100%, 0 9%);
+}
+
+.clip-polygon-5 {
+  clip-path: polygon(20% 0, 100% 15%, 90% 86%, 16% 100%, 0 37%);
+}
+
+.clip-polygon-6 {
+  clip-path: polygon(16% 7%, 77% 0, 100% 70%, 60% 100%, 0 76%);
+}
+
+/* image filters */
+.img-greyscale {
+  filter: grayscale(100%);
+}
+
+/* image screen (applied to image container along with clipping */
+.screen {
+  transition: all .15s ease-in-out;
+}
+
+.screen > * {
+  mix-blend-mode: luminosity;
+  transition: all .15s ease-in-out;
+}
+
+.screen-unit-primary,
+.screenmore-unit-primary {
+	background-color: var(--color-primary-alpha);
+}
+
+.screen-unit-secondary,
+.screenmore-unit-secondary {
+	background-color: var(--color-secondary-alpha);
+}
+
+.screen-unit-tertiary,
+.screenmore-unit-tertiary {
+	background-color: var(--color-tertiary-alpha);
+}
+
+.screen-unit-accent,
+.screenmore-unit-accent {
+	background-color: var(--color-accent-alpha);
+}
+
+.screen-stream-1,
+.screenmore-stream-1 {
+	background-color: var(--color-stream-1-alpha);
+}
+
+.screen-stream-2,
+.screenmore-stream-2 {
+	background-color: var(--color-stream-2-alpha);
+}
+
+.screen-stream-3,
+.screenmore-screen-stream-3 {
+	background-color: var(--color-stream-3-alpha);
+}
+
+.screen-stream-4,
+.screenmore-stream-4 {
+	background-color: var(--color-stream-4-alpha);
+}
+
+.group .screen-unit-primary,
+.group .screen-unit-secondary,
+.group .screen-unit-tertiary,
+.group .screen-unit-accent,
+.group .screen-stream-1,
+.group .screen-stream-2,
+.group .screen-stream-3,
+.group .screen-stream-4 {
+  background-color: transparent;
+}
+
+.group:hover .screen-unit-primary {
+	background-color: var(--color-primary);
+}
+
+.group:hover .screen-unit-secondary {
+	background-color: var(--color-secondary);
+}
+
+.group:hover .screen-unit-tertiary {
+	background-color: var(--color-tertiary);
+}
+
+.group:hover .screen-stream-1 {
+	background-color: var(--color-stream-1);
+}
+
+.group:hover .screen-stream-2 {
+	background-color: var(--color-stream-2);
+}
+
+.group:hover .screen-stream-3 {
+	background-color: var(--color-stream-3);
+}
+
+.group:hover .screen-stream-4 {
+	background-color: var(--color-stream-4);
+}
+
+.ubc-card:hover .unit-button:not(.unit-button--simple) {
+  background-color: $button-bg--hover;
+  bottom: -1.75em;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 4px rgba(0, 33, 69, 0.75);
+}
+
+.bottom-\[-1\.5em\] {
+  bottom: -1.5em;
+}
+
+.min-h-\[500px\] {
+  min-height: 500px;
+}
+
+.max-w-\[640px\] {
+  max-width: 640px;
+}
+
+.p-\[6rem\] {
+  padding: 6rem;
+}
+
+.w-\[173px\] {
+  width: 173px;
+}
+
+@media (min-width: $breakpoint--sm) {
+  .sm--w-\[200px\] {
+    width: 200px;
+  }
+
+  .sm--w-\[300px\] {
+    width: 300px;
+  }
+}
+
+@media (min-width: $breakpoint--md) {
+  .md--w-\[200px\] {
+    width: 200px;
+  }
+}
+
+@media (min-width: $breakpoint--xl) {
+  .xl--max-w-\[768px\] {
+    max-width: 768px;
+  }
+}

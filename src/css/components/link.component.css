@@ -1,0 +1,49 @@
+/** @define link */
+
+/*
+* This file contains all styles related to link styling
+*/
+
+/* Links with external link icons */
+
+/* Style external links added via wysiwyg */
+.bg-gradient a[href^="http"]:not([href*=$site-url])::after,
+.bg-gradient--screen a[href^="http"]:not([href*=$site-url])::after,
+.bg-ubc-blue a[href^="http"]:not([href*=$site-url])::after,
+.bg-ubc-blue-sea a[href^="http"]:not([href*=$site-url])::after,
+.bg-ubc-blue-cobalt a[href^="http"]:not([href*=$site-url])::after,
+a.unit-button[href^="http"]:not([href*=$site-url])::after,
+.update-teasers a[href^="http"]:not([href*=$site-url])::after,
+.link-external::after {
+	position: relative;
+	top: .125em;
+	display: inline-block;
+	width: .75em;
+	height: 1em;
+	margin-left: .25em;
+	content: url('../img/svg/icon-link-external.svg');
+}
+
+/* adjust unit button links with external sources */
+a.unit-button[href^="http"]:not([href*=$site-url])::after {
+	height: .75em !important;
+	top: .1em !important;
+	margin-left: .5em !important;
+}
+
+.bg-gradient a[href^="http"]:not([href*=$site-url])::after,
+.bg-gradient--screen a[href^="http"]:not([href*=$site-url])::after,
+.bg-ubc-blue a[href^="http"]:not([href*=$site-url])::after,
+.bg-ubc-blue-sea a[href^="http"]:not([href*=$site-url])::after,
+.bg-ubc-blue-cobalt a[href^="http"]:not([href*=$site-url])::after,
+a.unit-button[href^="http"]:not([href*=$site-url])::after {
+	content: url('../img/svg/icon-link-external--white.svg');
+}
+
+a.unit-button--light[href^="http"]:not([href*=$site-url])::after {
+	content: url('../img/svg/icon-link-external--black.svg') !important;
+}
+
+a.external-icon-removed::after {
+	display: none !important;
+}

@@ -1,0 +1,93 @@
+{% extends "layouts/landing.twig" %}
+{% set title = "What We're Up To" %}
+{% set pageTitle = "What We're Up To" %}
+{% set showTitle = FALSE %}
+
+{% block masthead %}
+{% include "components/component--masthead--image-title.twig" %}
+{% endblock %}
+
+
+{% block precontent %}
+{% endblock %}
+
+{% block areacta %}
+
+{% endblock %}
+
+{% block content %}
+<h2 class="mt-0 font-black"><span class="font-normal text-grey-700">Lorem Ipsume Dolor Sit Amet</span> Ex Causae Nonumes</h2>
+<p>Lorem ipsum dolor sit amet, ex causae nonumes salutandi quo, ea eos rebum deleniti abhorreant. At pri erat choro, facer principes mei ei. Per movet viderer integre ex, modo malis cum ut, pro id atqui reformidans complectitur. Sea indoctum philosophia te. At eos aeterno deserunt, falli graecis vix no, vix velit nemore utroque in.</p>
+{% endblock %}
+
+{% block areab %}
+<section>
+  <div class="relative flex justify-center md--transform md---translate-y-20 bg-unit-secondary clip-polygon-1">
+    <div class="p-16 xs--p-20 xl--p-32">
+      <h3 class="mt-0 text-lg font-black"><span class="font-normal">The Latest</span> News</h3>
+      <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p class="mt-2"><a href="#" class="text-sm unit-button link-expand">News Feed <svg role="img" class="unit-button-icon" >
+		<use xlink:href="#icon-rss"></use>
+	</svg></a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block areac %}
+<section class="py-24">
+  {% include "components/form--exposed-view.twig" %}
+  <ol class="grid grid-cols-1 gap-8 pl-0 list-none sm--grid-cols-3">
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+    <li class="pb-6 xl--pb-9">
+    {% include "components/component--card--vertical--5.twig" %}
+    </li>
+  </ol>
+  <div class="flex justify-center pt-8">
+  {% include "components/navigation--pager.twig" %}
+  </div>
+</section>
+{% endblock %}
+
+{% block prefooter %}
+{% include "components/region--newsletter--1.twig" %}
+
+{% endblock %}
+
+{% block custom_css %}
+{% endblock %}
+
+{% block custom_javascript %}
+{% endblock %}

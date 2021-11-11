@@ -1,0 +1,183 @@
+/** @define card */
+
+/*
+* This file contains all styles related to the card component.
+*/
+
+/* card layouts */
+.ubc-card__media {
+	grid-area: a;
+}
+
+.ubc-card__content {
+	grid-area: b;
+}
+
+.ubc-card {
+	position: relative;
+	display: grid;
+	grid-row-gap: 0;
+	grid-column-gap: 0;
+	height: 100%;
+}
+
+.ubc-card--horiz,
+.ubc-card--horiz-rev,
+.ubc-card--horiz--equal,
+.ubc-card--horiz--equal-rev,
+.ubc-card--horiz-thirds,
+.ubc-card--horiz-thirds-rev,
+.ubc-card--vert,
+.ubc-card--basic {
+	grid-template-areas:
+		'a'
+		'b';
+	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: $breakpoint--md) {
+
+	.ubc-card--horiz {
+		grid-template-areas: 'a b';
+		grid-template-rows: auto;
+		grid-template-columns: minmax(200px, 1fr) minmax(300px, 4fr);
+	}
+
+	.ubc-card--horiz-rev {
+		grid-template-areas: 'b a';
+		grid-template-rows: auto;
+		grid-template-columns: minmax(300px, 4fr) minmax(200px, 1fr);
+	}
+
+	.ubc-card--horiz--equal {
+		grid-template-areas: 'a b';
+		grid-template-rows: auto;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.ubc-card--horiz--equal-rev {
+		grid-template-areas: 'b a';
+		grid-template-rows: auto;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.ubc-card--horiz-thirds {
+		grid-template-areas: 'a b';
+		grid-template-rows: auto;
+		grid-template-columns: minmax(200px, 1fr) minmax(300px, 2fr);
+	}
+
+	.ubc-card--horiz-thirds-rev {
+		grid-template-areas: 'b a';
+		grid-template-rows: auto;
+		grid-template-columns: minmax(300px, 2fr) minmax(200px, 1fr);
+	}
+
+}
+
+/* Icon cards */
+.icon-card.bg-white a,
+.icon-card.bg-white svg {
+	@apply text-ubc-blue-cobalt;
+}
+
+.icon-card.bg-white:hover a,
+.icon-card.bg-white:hover svg {
+	@apply text-ubc-blue;
+}
+
+.icon-card.bg-grey-50,
+.icon-card.bg-grey-50 a,
+.icon-card.bg-ubc-blue-polar,
+.icon-card.bg-ubc-blue-polar a,
+.icon-card.bg-ubc-blue-neptune,
+.ubc-card.bg-ubc-blue-neptune a,
+.ubc-card.bg-ubc-blue-neptune .unit-button,
+.icon-card.bg-ubc-blue-cornflower,
+.ubc-card.bg-ubc-blue-cornflower a,
+.ubc-card.bg-ubc-blue-cornflower .unit-button,
+.icon-card.bg-grey-50:hover,
+.icon-card.bg-grey-50:hover a,
+.icon-card.bg-ubc-blue-polar:hover,
+.icon-card.bg-ubc-blue-polar:hover a,
+.ubc-card.bg-ubc-blue-neptune:hover,
+.ubc-card.bg-ubc-blue-neptune:hover a,
+.ubc-card.bg-ubc-blue-cornflower:hover,
+.ubc-card.bg-ubc-blue-cornflower:hover a {
+	@apply text-ubc-blue;
+}
+
+.ubc-card.bg-ubc-blue-neptune:hover .unit-button,
+.ubc-card.bg-ubc-blue-cornflower:hover .unit-button {
+	@apply text-white;
+}
+
+.ubc-card.bg-ubc-blue,
+.ubc-card.bg-ubc-blue a,
+.ubc-card.bg-ubc-blue .unit-button,
+.ubc-card.bg-ubc-blue-sea,
+.ubc-card.bg-ubc-blue-sea a,
+.ubc-card.bg-ubc-blue-sea .unit-button,
+.ubc-card.bg-ubc-blue-cobalt,
+.ubc-card.bg-ubc-blue-cobalt a,
+.ubc-card.bg-ubc-blue-cobalt .unit-button,
+.ubc-card.bg-ubc-blue:hover,
+.ubc-card.bg-ubc-blue:hover a,
+.ubc-card.bg-ubc-blue:hover .unit-button,
+.ubc-card.bg-ubc-blue-sea:hover,
+.ubc-card.bg-ubc-blue-sea:hover a,
+.ubc-card.bg-ubc-blue-sea:hover .unit-button,
+.ubc-card.bg-ubc-blue-cobalt:hover,
+.ubc-card.bg-ubc-blue-cobalt:hover a,
+.ubc-card.bg-ubc-blue-cobalt:hover .unit-button,
+.ubc-card.bg-unit-primary,
+.ubc-card.bg-unit-primary a,
+.ubc-card.bg-unit-primary:hover a,
+.ubc-card.bg-unit-secondary,
+.ubc-card.bg-unit-secondary a,
+.ubc-card.bg-unit-secondary:hover a,
+.ubc-card.bg-unit-accent,
+.ubc-card.bg-unit-accent a,
+.ubc-card.bg-unit-accent:hover a {
+	@apply text-white;
+}
+
+/* Image card gradients */
+.image-card,
+.image-card a {
+	@apply text-white;
+}
+
+.image-card .ubc-card__media.text-top-right::after,
+.image-card .ubc-card__media.text-bottom-right::after,
+.image-card .ubc-card__media.text-bottom-left::after,
+.image-card .ubc-card__media.text-top-left::after {
+	@apply absolute inset-0 w-full h-full;
+	content: '';
+}
+
+.image-card .ubc-card__media.text-top-left::after,
+.image-card .ubc-card__media.text-top-right::after {
+	background: linear-gradient(to bottom, $gradient-ubc-blue-opaque 0%, $gradient-ubc-blue-transparent 75%);
+}
+
+.image-card .ubc-card__media.text-bottom-left::after,
+.image-card .ubc-card__media.text-bottom-right::after {
+	background: linear-gradient(to bottom, $gradient-ubc-blue-transparent 25%, $gradient-ubc-blue-opaque 100%);
+}
+
+.paragraph--type--feature-image .text-top-right,
+.image-card .ubc-card__content.text-top-right {
+	@apply text-right;
+}
+
+.paragraph--type--feature-image .text-bottom-right,
+.image-card .ubc-card__content.text-bottom-right {
+	@apply justify-end text-right;
+}
+
+.paragraph--type--feature-image .text-bottom-left,
+.image-card .ubc-card__content.text-bottom-left {
+	@apply justify-end;
+}
